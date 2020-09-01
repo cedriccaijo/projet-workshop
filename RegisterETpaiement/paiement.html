@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title>Page Paiment</title>
+</head>
+
+<body class="body">
+    <section>
+        <div class="formulaire">
+            <h1> Renseingez vos moyens de paiement </h1>
+            <fieldset>
+                <legend> Paiement </legend>
+                <form>
+                    <p>Méthode paiement
+                        <input required="" type="radio" name="moyenpaiement" id="moyenpaiement1">
+                        <label for="moyenpaiement1"> <img src="img/visa.png"> </label>
+
+                        <input required="" type="radio" name="moyenpaiement" id="moyenpaiement2">
+                        <label for="moyenpaiement2"> <img src="img/mastercard.png"> </label>
+
+                        <input required="" type="radio" name="moyenpaiement" id="moyenpaiement3">
+                        <label for="moyenpaiement2"> <img src="img/cheque2.jpg"> </label>
+                    </p>
+
+                    <p>
+                        <label for="Detenteur"> Détenteur </label>
+                        <input placeholder="Jean CONORD" required="" type="text" name="Detenteur" id="Detenteur">
+                    </p>
+
+                    <p> <label for="numerocarte">Numero Carte </label>
+                        <input placeholder="0000 0000 0000 0000" required="" type="number" name="numerocarte">
+                    </p>
+
+                    <p>
+                        <label for="expiration"> Date d'expiration </label>
+                        <input placeholder="02/25" required="" type="number" name="expiration" id="expiration">
+                    </p>
+
+                    <p> <label for="Cryptogramme"> Cryptogramme </label>
+                        <input placeholder="000" required="" type="number" name="Cryptogramme">
+                    </p>
+
+                </form>
+            </fieldset>
+
+            <div class="droite"> <a href="paiement.html" class="button">Payer</a> </div>
+        </div>
+
+        <div class="recappaiement">
+            <h2> Recapitulatif de la commande : </h2>
+            <p> 2x Billet 80 €<br> 4x Truc Bidule 70€ <br></p>
+            <h3> Total commande</h2>
+                <p>150 € (inclut 20% TVA) </p>
+        </div>
+    </section>
+
+</body>
+
+</html>

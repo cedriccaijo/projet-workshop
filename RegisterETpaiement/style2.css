@@ -1,0 +1,173 @@
+
+/*Reglage generaux  de la page */
+
+body
+{
+	background: url("img/imgfond4.jpg") no-repeat fixed #0070BF;
+	margin: 8%;
+	height: 80%;
+	background-size: 1920px 1080px;
+	font-family: arial, serif;
+
+}
+
+
+/*Mise en forme de banniere + Formulaire */
+section
+{
+	display: flex;
+	background: white;
+	border-radius: 20px;
+	box-shadow: 5px 10px 15px black;
+	width: 50%;
+	min-width: 700px;
+	margin: auto;
+}
+
+.banniere
+{	
+	min-width: 25%;
+	min-height: 100%;
+	background: url("img/banniere.png");
+	background-size: 190%; 
+	border-radius: 10px 0 0 10px;
+}
+
+.formulaire
+{
+
+	max-width:700px;
+	padding: 20px;
+}
+
+h1
+{
+	text-align: center;
+	font-size: 2.5em;
+	color: #0070BF;
+	text-transform: uppercase;
+}
+
+/*A l'interieur de mon formulaire */
+.dejaclient
+{
+	font-size: 0.8em;
+}
+
+
+
+label
+{
+	display: inline-block;
+}
+
+input
+{
+	display: inline-block;
+}
+
+form p
+{
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	width: 400px;
+	color: #0070BF;
+	font-size: 0.8em;
+	text-transform: uppercase;
+
+}
+
+fieldset
+{
+	margin: auto;
+	margin-bottom: 30px;
+	max-width:600px;
+	min-width: 300px;
+	border-radius: 20px;
+	font-size: 1.1em;
+	text-transform: uppercase;
+
+}
+
+form img {
+	width: 40%;
+	}
+
+
+/*Propriété du bouton de validation */
+
+.button
+{
+	text-decoration: none;
+	color: white;
+	background: #0070BF;
+	padding: 9px 50px  9px 50px;
+	border-radius: 5px;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.droite
+{
+	text-align: right;
+}
+
+
+/*Au passage de le bouton change de forme */
+.button:hover
+{
+	border-radius: 15px;
+}
+
+/*Rendre responsive */ 
+
+@media all and (max-device-width: 800px)
+{
+
+	body
+	{
+		width: 80%;
+		margin: auto;
+		background: #0070BF;
+		margin-top: 10%;
+	}
+	
+	section
+	{
+		width: 100%;
+		margin: auto;
+	}
+
+	.banniere
+	{
+		display: none;
+	}
+
+	.formulaire
+	{
+		width:100%;
+		margin:auto;
+	}
+
+	fieldset
+	{
+		max-width:100%;
+	}
+
+	form p
+	{
+		flex-direction: column;
+		width: 70%;
+	}
+
+		form
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+}

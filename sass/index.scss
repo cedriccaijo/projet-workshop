@@ -1,0 +1,289 @@
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: url(assets/img/juv2projet.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid grey;
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        img {
+            margin-left: 25px;
+        }
+        ul {
+            height: 100%;
+            li {
+                background-color: transparent;
+                display: inline-block;
+                padding: 25px 15px;
+                a {
+                    color: white;
+                }
+            }
+            li:hover {
+                a {
+                    color: white;
+                }
+                border-bottom: 3px solid white;
+                margin-bottom:-3px;
+            }
+        }
+    }
+}
+
+#main1 {
+    padding-top: 5vh;
+}
+
+.carousel {
+    img {
+        height: 370px;
+        width: 660px;
+    }
+}
+
+.carousel-inner {
+    height: 330px;
+    width: 660px;
+}
+
+.match {
+    height: 330px;
+    width: 400px;
+    float: right;
+    background-color: black;
+    h2 {
+        padding-top: 12%;
+        text-align: center;
+        color: white;
+    }
+    p {
+        color: white;
+        text-align: center;
+    }
+}
+
+.carousel .asolue {
+    position: absolute;
+}
+
+#main2 {
+    padding: 5vh 0vh 5vh 0vh;
+    .info {
+        margin: 0% 0% 0% 2%;
+        background-color: white;
+        height: 330px;
+    }
+    h4 {
+        padding-top: 15%;
+        text-align: center;
+    }
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    border-top: 1px solid grey;
+    ul {
+        padding-top: 4vh;
+        display: block;
+        color: white;
+        list-style: none;
+        li {
+            a {
+                color: #a6adbb;
+            }
+        }
+    }
+}
+
+#shop1 {
+    .shirt {
+        img {
+            height: 250px;
+            width: 250px;
+        }
+        text-align: center;
+        color: white;
+        font-size: 1em;
+        h4 {
+            color: white;
+            font-size: 1em;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+    }
+}
+
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.valider {
+    margin-bottom: 10%;
+}
+
+.billet {
+    padding-bottom: 10%;
+}
+
+
+/* contact*/
+
+.body {
+    background: url("/assets/img/juv2projet.jpg") no-repeat fixed;
+    margin: 8%;
+    height: 80%;
+    background-size: 1920px 1080px;
+    font-family: arial, serif;
+}
+
+section {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 5px 10px 15px black;
+    width: 50%;
+    min-width: 700px;
+    margin: auto;
+}
+
+.banniere {
+    min-width: 25%;
+    min-height: 100%;
+    background: url("/RegisterETpaiement/img/banniere.png");
+    background-size: 190%;
+    border-radius: 10px 0 0 10px;
+}
+
+.formulaire {
+    max-width: 700px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #0070BF;
+    text-transform: uppercase;
+}
+
+
+/*A l'interieur de mon formulaire */
+
+.dejaclient {
+    font-size: 0.8em;
+}
+
+label {
+    display: inline-block;
+}
+
+input {
+    display: inline-block;
+}
+
+form p {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    color: #0070BF;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+fieldset {
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 600px;
+    min-width: 300px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+form img {
+    width: 40%;
+}
+
+
+/*Propriété du bouton de validation */
+
+.button {
+    text-decoration: none;
+    color: white;
+    background: #0070BF;
+    padding: 9px 50px 9px 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.droite {
+    text-align: right;
+}
+
+
+/*Au passage de le bouton change de forme */
+
+.button:hover {
+    border-radius: 15px;
+}
+
+
+/*Rendre responsive */
+
+@media all and (max-device-width: 800px) {
+    body {
+        width: 80%;
+        margin: auto;
+        background: #0070BF;
+        margin-top: 10%;
+    }
+    section {
+        width: 100%;
+        margin: auto;
+    }
+    .banniere {
+        display: none;
+    }
+    .formulaire {
+        width: 100%;
+        margin: auto;
+    }
+    fieldset {
+        max-width: 100%;
+    }
+    form p {
+        flex-direction: column;
+        width: 70%;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+}
